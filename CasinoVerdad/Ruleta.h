@@ -8,7 +8,7 @@
 class Ruleta {
 private:
     sf::Font font;
-    sf::Text titleText, resultText, messageText, betText;
+    sf::Text titleText, resultText, messageText, betText, winningsText;
     sf::RectangleShape rueda;
     sf::CircleShape indicador;
     int resultado;
@@ -19,6 +19,7 @@ private:
     std::string colorApostado;
     int docenaApostada;
     int columnaApostada;
+    int ganancias;
     
     void generarResultado();
     void calcularGanancia();

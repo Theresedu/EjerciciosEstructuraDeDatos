@@ -140,12 +140,49 @@ void Ruleta::generarResultado() {
     resultado = rand() % 38; // 0-36 + 37 representa el 00
     std::string resultadoTexto = (resultado == 37) ? "00" : std::to_string(resultado);
     resultText.setString("Resultado: " + resultadoTexto);
-    calcularGanancia();
-    if (messageText.getString() == "") {
-        messageText.setString("Perdiste la apuesta!");
+    
+    if (resultado == 0 || resultado == 37) {
+        rueda.setFillColor(sf::Color::Green);
+    } else if (esRojo(resultado)) {
+        rueda.setFillColor(sf::Color::Red);
+    } else {
+        rueda.setFillColor(sf::Color::Black);
     }
+    
+    calcularGanancia();
+    
+    std::string resultadoMensaje = "";
+    if (tipoApuesta == 0 && resultado == numeroApostado) {
+        resultadoMensaje = "Ganaste al acertar el número! x35";
+        ganancias = apuesta * 35;
+    } else if (tipoApuesta == 1 && esRojo(resultado)) {
+        resultadoMensaje = "Ganaste por rojo! x2";
+        ganancias = apuesta * 2;
+    } else if (tipoApuesta == 2 && !esRojo(resultado) && resultado != 0 && resultado != 37) {
+        resultadoMensaje = "Ganaste por negro! x2";
+        ganancias = apuesta * 2;
+    } else if (tipoApuesta == 3 && resultado % 2 == 0 && resultado != 0 && resultado != 37) {
+        resultadoMensaje = "Ganaste por par! x2";
+        ganancias = apuesta * 2;
+    } else if (tipoApuesta == 4 && resultado % 2 == 1) {
+        resultadoMensaje = "Ganaste por impar! x2";
+        ganancias = apuesta * 2;
+    } else if (tipoApuesta == 5 && obtenerDocena(resultado) == docenaApostada) {
+        resultadoMensaje = "Ganaste por docena! x3";
+        ganancias = apuesta * 3;
+    } else if (tipoApuesta == 6 && obtenerColumna(resultado) == columnaApostada) {
+        resultadoMensaje = "Ganaste por columna! x3";
+        ganancias = apuesta * 3;
+    } else {
+        resultadoMensaje = "Perdiste la apuesta!";
+        ganancias = 0;
+    }
+    
+    messageText.setString(resultadoMensaje);
+    winningsText.setString("Ganancias: " + std::to_string(ganancias));
     girando = false;
 }
+
 
 void Ruleta::handleInput(sf::Event event) {
     if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Space && !girando) {
@@ -164,6 +201,7 @@ void Ruleta::update() {
     }
 }
 
+/*
 void Ruleta::render(sf::RenderWindow& window) {
     window.draw(titleText);
     window.draw(rueda);
@@ -171,4 +209,15 @@ void Ruleta::render(sf::RenderWindow& window) {
     window.draw(resultText);
     window.draw(messageText);
     window.draw(betText);
+}
+*/
+
+void Ruleta::render(sf::RenderWindow& window) {
+    window.draw(titleText);
+    window.draw(rueda);
+    window.draw(indicador);
+    window.draw(resultText);
+    window.draw(messageText);
+    window.draw(betText);
+    window.draw(winningsText);
 }
