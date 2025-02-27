@@ -6,7 +6,6 @@
 #include <iostream>
 #include "Blackjack.h"
 #include "Ruleta.h"
-//#include "Ayuda.html"
 
 using namespace std;
 
@@ -25,7 +24,6 @@ public:
     int getSelectedOption();
     void addTitle(const string& title);
     void principal_menu();
-    //void ayuda();
 };
 
 #endif // MENU_H

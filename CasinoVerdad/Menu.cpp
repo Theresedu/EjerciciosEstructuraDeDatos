@@ -77,7 +77,7 @@ void Menu::principal_menu() {
         options.clear();
         addOption("Jugar Blackjack");
         addOption("Jugar Ruleta");
-        //addOption("Ayuda");
+        addOption("Ayuda");
         addOption("Salir");
         addTitle("\t Bienvenido al Casino");
         displayMenu();

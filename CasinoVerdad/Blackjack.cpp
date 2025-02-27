@@ -52,7 +52,7 @@ void Blackjack::checkGameState() {
     if (playerScore > 21) {
         messageText.setString("Perdiste! Te pasaste de 21.");
         gameOver = true;
-    } else if (dealerScore > 21 && dealerScore > 17) {
+    } else if (dealerScore > 21 ) {
         messageText.setString("Ganaste! El dealer se paso de 21.");
         gameOver = true;
     } else if (playerScore == 21) {
