@@ -39,11 +39,11 @@ private:
 public:
     Registro numeromonto;
     Ruleta();
-    void startGame();
-    void handleInput(sf::Event event);
+    void startGame(int cantidad);
+    void handleInput(sf::Event event, int);
     void update();
     void render(sf::RenderWindow& window);
-    void solicitarApuesta();
+    void solicitarApuesta(int cantidad);
     void setApuesta(int cantidad, int tipo, int numero, std::string color, int docena = -1, int columna = -1);
     void setSaldo(double saldo);  // Método para establecer el saldo
 };

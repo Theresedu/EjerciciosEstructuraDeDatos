@@ -19,8 +19,8 @@ private:
     int selectedIndex;
     string title;
     Blackjack blackjack;
-    Ruleta ruleta;
     Tragamonedas tragamonedas;
+    Ruleta ruleta;
     Registro registroUsuario;
 
     void hacerBackup();  // Función para hacer backup

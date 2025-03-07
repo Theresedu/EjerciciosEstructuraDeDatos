@@ -165,10 +165,50 @@
             displayMenu();
             switch (getSelectedOption()) {
             case 0:
+            do {
+                cout << "Ingrese el monto con el que va a jugar: ";
+                monto_input = registroUsuario.obtenerEntrada(true); // Solo se permiten números
+        
+                if (monto_input.empty()) {
+                    cout << "El monto no puede estar vacío. Intenta nuevamente." << endl;
+                } else {
+                    try {
+                        monto = stod(monto_input); // Convertir el monto a número
+                        if (monto <= 0) {
+                            cout << "El monto debe ser mayor a 0." << endl;
+                        }
+                    } catch (invalid_argument& e) {
+                        cout << "El monto debe ser un número válido. Intenta nuevamente." << endl;
+                        continue; // Si la conversión falla, continúa pidiendo el monto
+                    }
+                }
+            } while (monto <= 0 || monto_input.empty());
+            registroUsuario.setMonto(monto);
                 blackjack.startGame();
                 break;
             case 1:
-                ruleta.startGame();
+            do {
+                cout << "Ingrese el monto con el que va a jugar: ";
+                monto_input = registroUsuario.obtenerEntrada(true); 
+        
+                if (monto_input.empty()) {
+                    cout << "El monto no puede estar vacío. Intenta nuevamente." << endl;
+                } else {
+                    try {
+                        monto = stod(monto_input); // Convertir el monto a número
+                        if (monto <= 0) {
+                            cout << "El monto debe ser mayor a 0." << endl;
+                        }
+                    } catch (invalid_argument& e) {
+                        cout << "El monto debe ser un número válido. Intenta nuevamente." << endl;
+                        continue; // Si la conversión falla, continúa pidiendo el monto
+                    }
+                }
+            } while (monto <= 0 || monto_input.empty());
+            registroUsuario.setMonto(monto);
+            ruleta.setSaldo(monto);
+            //ruleta.setApuesta(monto);
+                ruleta.startGame(monto);
                 break;
             case 2:
             

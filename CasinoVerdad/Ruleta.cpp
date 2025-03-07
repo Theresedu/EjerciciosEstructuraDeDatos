@@ -51,17 +51,17 @@ Ruleta::Ruleta() {
     colorApostado = "";
     docenaApostada = -1;
     columnaApostada = -1;
-    saldo = 1000; // Saldo inicial
+    saldo = 50; 
 }
 
-void Ruleta::startGame() {
+void Ruleta::startGame(int cantidad) {
     sf::RenderWindow window(sf::VideoMode(800, 600), "Ruleta - Casino");
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
-            handleInput(event);
+            handleInput(event, cantidad);
         }
         update();
         window.clear();
@@ -93,13 +93,13 @@ int Ruleta::obtenerColumna(int numero) {
     return (numero - 1) % 3 + 1;
 }
 
-void Ruleta::solicitarApuesta() {
-    int cantidad, tipo, numero = -1, docena = -1, columna = -1;
+void Ruleta::solicitarApuesta(int cantidad) {
+    int tipo, numero = -1, docena = -1, columna = -1;
     std::string color = "";
     
-    std::cout << "Ingrese la cantidad a apostar: ";
-    std::cin >> cantidad;
-    
+    /*std::cout << "Ingrese la cantidad a apostar: ";
+    std::cin >> cantidad;*/
+    //cantidad = 1;
     tipo = menuApuestas.mostrarMenuApuestas();
     
     if (tipo == 0) {
@@ -125,6 +125,7 @@ void Ruleta::setSaldo(double saldo) {
 
 void Ruleta::setApuesta(int cantidad, int tipo, int numero, std::string color, int docena, int columna) {
     apuesta = cantidad;
+
     tipoApuesta = tipo;
     numeroApostado = numero;
     colorApostado = color;
@@ -169,9 +170,9 @@ void Ruleta::generarResultado() {
     calcularGanancia();
 }
 
-void Ruleta::handleInput(sf::Event event) {
+void Ruleta::handleInput(sf::Event event, int cantidad) {
     if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Space && !girando) {
-        solicitarApuesta();
+        solicitarApuesta(cantidad);
         girando = true;
         messageText.setString("Girando la ruleta...");
         std::this_thread::sleep_for(std::chrono::seconds(2));
