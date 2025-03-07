@@ -1,42 +1,4 @@
-/*
-#ifndef TRAGAMONEDAS_H
-#define TRAGAMONEDAS_H
 
-#include <SFML/Graphics.hpp>
-
-class Tragamonedas {
-private:
-    sf::Texture fondoTexture;
-    sf::Sprite fondo;
-
-    sf::Font font;
-    sf::Text mensaje;
-
-    sf::Texture iconosTexture[3];
-    sf::Sprite iconos[3];
-
-    int saldo;
-    int apuesta;
-
-    std::string imagenes[5] = {
-        "estrellatragamonedas.png",
-        "numero7.png",
-        "campanaTragamonedas.png",
-        "cereza.png",
-        "diamante.png"
-    };
-
-public:
-    Tragamonedas();
-    void setSaldo(double cantidad);
-    void setApuesta(double cantidad);
-    void jugar();
-    void render(sf::RenderWindow &window);
-    bool salir(sf::Event event);
-};
-
-#endif // TRAGAMONEDAS_H
-*/
 
 #ifndef TRAGAMONEDAS_H
 #define TRAGAMONEDAS_H
