@@ -1,0 +1,8 @@
+Backup del Casino
+Saldo actual: 0
+Datos de registro:
+Nombre: 
+Apellido: 
+Cédula: 
+Edad: 0
+Monto: 0

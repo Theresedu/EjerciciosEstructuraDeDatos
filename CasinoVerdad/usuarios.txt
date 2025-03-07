@@ -1,0 +1,11 @@
+Nombre: Eduardo altamirano, Cedula: 1712192838, Edad: 18, Monto: 1000, Fecha de Registro: 2025-03-07 00:39:36
+Nombre: Eduardo Altamirano, Cedula: 1712192838, Edad: 18, Monto: 100000, Fecha de Registro: 2025-03-07 00:51:52
+Nombre: eduardo altamirano, Cedula: 1728879733, Edad: 18, Monto: 1000, Fecha de Registro: 2025-03-07 01:10:09
+Nombre: edu al, Cedula: 1728879733, Edad: 18, Monto: 1000, Fecha de Registro: 2025-03-07 01:18:00
+Nombre: ed aa, Cedula: 1728879733, Edad: 19, Monto: 1000, Fecha de Registro: 2025-03-07 01:22:36
+Nombre: ed aa, Cedula: 1728879733, Edad: 19, Monto: 1000, Fecha de Registro: 2025-03-07 01:29:51
+Nombre: ed aa, Cedula: 1728879733, Edad: 19, Monto: 1000, Fecha de Registro: 2025-03-07 01:33:13
+Nombre: as s, Cedula: 1728879733, Edad: 19, Monto: 1000, Fecha de Registro: 2025-03-07 01:39:30
+Nombre: ed aa, Cedula: 1728879733, Edad: 18, Monto: 1000, Fecha de Registro: 2025-03-07 02:24:10
+Nombre: ed aa, Cedula: 1728879733, Edad: 19, Monto: 100, Fecha de Registro: 2025-03-07 02:30:14
+Nombre: ed ass, Cedula: 1728879733, Edad: 19, Monto: 1000, Fecha de Registro: 2025-03-07 02:34:54

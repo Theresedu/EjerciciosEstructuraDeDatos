@@ -1,0 +1,31 @@
+body {
+    background: url('FondoPoker.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: gold;
+    text-shadow: 2px 2px 5px black;
+}
+
+p, ul {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    max-width: 800px;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
