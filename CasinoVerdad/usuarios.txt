@@ -9,14 +9,4 @@ Nombre: as s, Cedula: 1728879733, Edad: 19, Monto: 1000, Fecha de Registro: 2025
 Nombre: ed aa, Cedula: 1728879733, Edad: 18, Monto: 1000, Fecha de Registro: 2025-03-07 02:24:10
 Nombre: ed aa, Cedula: 1728879733, Edad: 19, Monto: 100, Fecha de Registro: 2025-03-07 02:30:14
 Nombre: ed ass, Cedula: 1728879733, Edad: 19, Monto: 1000, Fecha de Registro: 2025-03-07 02:34:54
-Nombre: ed aa, Cedula: 1728879733, Edad: 18, Monto: 1000, Fecha de Registro: 2025-03-07 08:19:10
-
-Nombre: ed ad, Cedula: 1728879733, Edad: 18, Monto: 1, Fecha de Registro: 2025-03-07 10:30:13
-Nombre: ed d, Cedula: 1728879733, Edad: 18, Monto: 1, Fecha de Registro: 2025-03-07 10:36:42
-Nombre: ed ad, Cedula: 1728879733, Edad: 18, Monto: 1, Fecha de Registro: 2025-03-07 10:39:28
-Nombre: de as, Cedula: 1728879733, Edad: 18, Monto: 1, Fecha de Registro: 2025-03-07 10:42:46
-Nombre: qwe asd, Cedula: 1710753144, Edad: 23, Monto: 1, Fecha de Registro: 2025-03-07 10:48:43
-Nombre: qwe das, Cedula: 1710753144, Edad: 19, Monto: 1, Fecha de Registro: 2025-03-07 10:58:22
-Nombre: asd qwe, Cedula: 1710753144, Edad: 19, Monto: 1, Fecha de Registro: 2025-03-07 10:59:41
-Nombre: qwe asd, Cedula: 1710753144, Edad: 19, Monto: 1, Fecha de Registro: 2025-03-07 11:01:54
-Nombre: qwe asd, Cedula: 1710753144, Edad: 19, Monto: 1, Fecha de Registro: 2025-03-07 11:04:20
+Nombre: ed aa, Cedula: 1728879733, Edad: 18, Monto: 1000, Fecha de Registro: 2025-03-07 08:19:10Nombre: hknk hjhk, Cedula: 1728879733, Edad: 22, Monto: 1, Fecha de Registro: 2025-03-07 13:10:52
