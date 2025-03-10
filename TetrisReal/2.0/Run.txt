@@ -1,0 +1,1 @@
+g++ -o tetris Juego.cpp Tablero.cpp Pieza.cpp MainGeneral.cpp -Wall
